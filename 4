@@ -1,0 +1,33 @@
+using System;
+
+namespace SwapVal
+{
+    class Program
+    {
+        static void SwapNum(ref int x, ref int y)
+        {
+            int tempswap = x;
+            x = y;
+            y = tempswap;
+        }
+        static void Main(string[] args)
+        {
+            int a;
+            int b;
+
+            Console.WriteLine( "Value of a and b before sawapping");
+            Console.WriteLine();
+            Console.Write("a = ");
+            a = int.Parse(Console.ReadLine());
+            Console.Write( "b = ");
+            b = int.Parse(Console.ReadLine());
+            SwapNum(ref a, ref b);
+            Console.WriteLine();
+            Console.WriteLine("Value of a and b after sawapping");
+            Console.WriteLine();
+            Console.WriteLine("a = " + " " + a);
+            Console.WriteLine("b = " + " " + b);
+            Console.ReadLine();
+        }
+    }
+}
