@@ -1,0 +1,28 @@
+using System;
+
+public enum DayofWeek
+{
+    Monday=1,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int i;
+        DayofWeek day;
+
+        Console.WriteLine("Enter the number of day: ");
+        i = int.Parse(Console.ReadLine());
+        day = (DayofWeek)i;
+        Console.WriteLine("It's " + day);
+
+    }
+}
