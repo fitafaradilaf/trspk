@@ -16,14 +16,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        int i = 2, j = 6;
-        DayofWeek day1, day2;
+        int i;
+        DayofWeek day;
 
-        day1 = (DayofWeek)i;
-        day2 = (DayofWeek)j;
-
-        Console.WriteLine(day1);
-        Console.WriteLine(day2);
+        Console.WriteLine("Enter the number of day: ");
+        i = int.Parse(Console.ReadLine());
+        day = (DayofWeek)i;
+        Console.WriteLine("It's " + day);
 
     }
 }
