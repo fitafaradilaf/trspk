@@ -1,0 +1,29 @@
+using System;
+
+public enum DayofWeek
+{
+    Monday=1,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int i = 2, j = 6;
+        DayofWeek day1, day2;
+
+        day1 = (DayofWeek)i;
+        day2 = (DayofWeek)j;
+
+        Console.WriteLine(day1);
+        Console.WriteLine(day2);
+
+    }
+}
