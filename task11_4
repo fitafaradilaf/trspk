@@ -1,0 +1,19 @@
+using System;
+
+public class task11_4
+{
+    [Flags]
+    enum Days { Monday = 1, Tuesday = 2, Thursday = 4, Sunday= 7 };
+
+    public static void Main()
+    {
+        Console.WriteLine("The entries of the Day of week enumeration are:");
+        foreach (string NameofDays in Enum.GetNames(typeof(Days)))
+        {
+            Console.WriteLine("{0} = {1:D}", NameofDays,
+                                         Enum.Parse(typeof(Days), NameofDays));
+        }
+        Console.WriteLine();
+
+    }
+}
